@@ -41,3 +41,9 @@ function counter() : Counter {
  * getCount() 함수는 객체지향의 '캡슐화' 개념을 따르고 있다.
  * Class문법의 static 키워드와 유사하다.
  */
+
+const closureCounter = counter();
+// 함수를 호출했을 뿐인데 아래의 getCount()는 숫자를 리턴한다.
+// 전역변수를 사용하지 않고도 함수를 호출했을 때에 상태를 기억하고 있다.
+// 전역변수는 그 자체로 메모리 누수 (memory leak)의 원인이 된다.
+// 함수를 호출했을 때의 상태를 기억하는 것은 함수형 프로그래밍의 핵심이다.
