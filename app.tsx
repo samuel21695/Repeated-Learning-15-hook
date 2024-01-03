@@ -47,3 +47,11 @@ const closureCounter = counter();
 // 전역변수를 사용하지 않고도 함수를 호출했을 때에 상태를 기억하고 있다.
 // 전역변수는 그 자체로 메모리 누수 (memory leak)의 원인이 된다.
 // 함수를 호출했을 때의 상태를 기억하는 것은 함수형 프로그래밍의 핵심이다.
+console.log(closureCounter.getCount()); //? 0
+closureCounter.increment();
+closureCounter.increment();
+closureCounter.increment();
+console.log(closureCounter.getCount()); //? 3
+closureCounter.decrement();
+closureCounter.decrement();
+console.log(closureCounter.getCount()); //? 1
