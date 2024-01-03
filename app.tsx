@@ -9,3 +9,10 @@ interface Counter {
   decrement(): void;
   getCount(): number;
 }
+
+/**
+ * 타입설정에 따라 다르지만, 일반적인 형태
+ * 함수 counter()는 위 인터페이스를 '따른다' 라고 명시된다.
+ * 제작자는 Counter 인터페이스가 무엇인지 몰라도,
+ * 작성하면서 에러를 통해 인터페이스를 따르지 않았다는 것을 알 수 있다.
+ */
