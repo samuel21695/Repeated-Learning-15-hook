@@ -31,6 +31,13 @@ function counter() : Counter {
     },
     getCount() :number {
       return count;
-    }
-  }
+    },
+  };
 }
+
+/**
+ * counter() 함수의 반환값은
+ * Counter 인터페이스를 따르는 객체이다.
+ * getCount() 함수는 객체지향의 '캡슐화' 개념을 따르고 있다.
+ * Class문법의 static 키워드와 유사하다.
+ */
